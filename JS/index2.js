@@ -7,9 +7,9 @@ let imgZ = document.querySelectorAll('.imgZ');
 bottonContentBoth.addEventListener('click', contentHeight);
 window.addEventListener('scroll', () => {
   //console.log(document.body.scrollTop());
-  if (window.pageYOffset > 20) {
+  if (window.pageYOffset > 40) {
     headerFixed.classList.add('fixed');
-    headerImage.style.marginTop = "94px";
+    headerImage.style.marginTop = "110px";
   } else {
     headerFixed.classList.remove('fixed');
     headerImage.style.marginTop = "0";
@@ -38,25 +38,25 @@ function func1() {
   img3.classList.add('imgsmena');
   imgZ[1].classList.add('imgZ_active');
   imgZ[0].classList.remove('imgZ1');
-  console.log('func1: img3.add');
+  // console.log('func1: img3.add');
 }
 function func2() {
   img2.classList.add('imgsmena');
   imgZ[2].classList.add('imgZ_active');
   imgZ[1].classList.remove('imgZ_active');
-  console.log('func2: img2.add');
+  //console.log('func2: img2.add');
 }
 function func3() {
   img3.classList.remove('imgsmena');
   imgZ[0].classList.add('imgZ1');
   imgZ[2].classList.remove('imgZ_active');
-  console.log('func3: img3.remove');
+  //console.log('func3: img3.remove');
 }
 
 function func4() {
   img2.classList.remove('imgsmena');
 
-  console.log('func4: img2.remove');
+  //console.log('func4: img2.remove');
 }
 
 // function func2() {

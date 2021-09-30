@@ -1,3 +1,47 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -23,16 +67,17 @@ h2{
   z-index: -1;
 }
 .logo{
-  margin-left: 20px;
-  margin-top:20px;
+  margin-left: 10px;
+  margin-top:50px;
 
 }
 .logo_br{
-  width: 70px;
-  height: 70px;
+  width: 50px;
+  height: 50px;
   z-index: 10;
 }
 .header{
+  height: 110px;
   display: flex;
   background-color:#727BBA;
   justify-content: space-between;
@@ -53,24 +98,7 @@ ul li {
   margin: 0px -7px 0 0;
   display:inline-block;
 }
-/* ul li ul li{
-  z-index: 1000;
-  width: 300px;
-  height: 130px;
-  
-} */
-/* .egjjgeijge{
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-content: center;
-  justify-content: flex-start;
-  align-items: center;
-  width: 100%;
-  background-color:#5C64A3;
-  height: 130px;
-  padding-top: 5px;
-} */
+
 a {
   display:block;
   padding: 0 0 0 10px;
@@ -105,7 +133,7 @@ ul ul li {
 .grgree{
   position: relative;
   left:-300px;
-  height: 9px;
+  height: 20px;
   width: 1000px;
   opacity: 0;
   background-color: #727BBA;
@@ -116,21 +144,38 @@ ul ul li {
   top: 0;
   left: 307px; 
 }
+.r3434 a{
+  margin-top: 2px;
+  font-size: 16px;
+}
+.official{
+  margin-top: 15px;
+  left: -100px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+}
 .r3434_2{
 position: absolute;
   top: 0;
-  left: 110px; 
+  left: 157px; 
 }
 .r3434_3{
 position: absolute;
   top: 0;
-  left: -90px; 
+  left: -7px; 
+}
+.r3434_4{
+position: absolute;
+  top: 0;
+  left: -91px; 
 }
 .r3434{
-  margin-top:9px;
+  margin-top:20px;
   padding-top:10px;
-  margin-left: -50vw;
-  width: 100vw;
+  margin-left: -60vw;
+  width: 120vw;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -175,15 +220,14 @@ position: absolute;
 .bord1{
   border-radius: 15px 0 0 0;
 }
-.bord3{
+.bord4{
   border-radius: 0 15px 0 0;
-  margin-left: 3px;
 }
 .prkg4{
-  width: 200px;
+  padding:0 10px 0 10px;
   z-index: 1000;
 }
-.prkg4::after{
+/* .prkg4::after{
   pointer-events: none;
   content:"";
   position:absolute;
@@ -192,14 +236,19 @@ position: absolute;
   background-color: #8990C6;
   top: 0px;
   left: 200px;
-}
+} */
 .accommodation_content:hover .grgr{
   opacity: 1;
 }
-.accommodation_content{
-  width: 210px;
+.prkg4 a{
+  padding:5px;
+  padding-bottom: 10px;
 }
-.prkg4::before{
+.accommodation_content{
+  vertical-align: bottom;
+  height: 20px;
+}
+/* .prkg4::before{
   content:"";
   position:absolute;
   width: 1px;
@@ -207,27 +256,27 @@ position: absolute;
   background-color: #8990C6;
   top: 0px;
   left: 400px;
-}
+} */
 .grrge3{
   margin-left: 3px;
 }
 .fixed{
   width: 100%;
   position:fixed;
-  top:-20px;
+  top:-40px;
 }
 
 .table_of_contents{
   align-items: center;
   margin-top: 60px;
-  width: 600px;
+  width: 800px;
   height: 25px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 .search{
   margin-right: 50px;
-  margin-top: 40px;
+  margin-top: 65px;
   color:white;
 }
 .header_image{
@@ -503,3 +552,4 @@ footer{
 .imgsmena{
     opacity:0;
 }
+
